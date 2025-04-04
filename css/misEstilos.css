@@ -1,0 +1,586 @@
+/* Estilos generares de la pagina */
+@import url('https://fonts.googleapis.com/css2?family=Chonburi&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Chonbury";
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos del body para que todos los elementos queden uno debajo de otros */
+#tituloPaginas{
+    display: none;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    width: 95vw; 
+    background-color: #0D0D0D;
+    overflow-x: hidden;
+}
+
+/* Estilos para INICIO */
+#headerPortada {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #0D0D0D;
+    background-image: url(../image/imagenesinicio/1-portada\ header\ inicio.png );
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#divLogoNav{
+    display: flex;
+    flex-direction: column;
+    width: 500px;  
+    margin-bottom: 100px;
+}
+#divLogotipo {
+    width: 100vw; 
+    margin-bottom: 40px;
+}
+#enlaceLogo{
+    color: white;
+    text-decoration: none;
+}
+#enlaceLogo:visited{
+    color: white;
+    text-decoration: none;
+}
+#referenciaLogo{
+    margin-top: -10px;
+    padding-bottom: 10px;
+}
+#logotipo {
+    width: 300px;
+}
+
+#navegacion {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+#navegacion a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 20px;
+}
+
+#tituloInicio{
+    color: white;
+    margin-top: 30px;
+    text-align: center; 
+}
+#parrafoInicio{
+    width: 40vw;
+    margin-top: 30px;
+    font-size: 20px;
+    margin-bottom: 80px;
+    text-align: justify;
+    color: white;
+}
+.botonPaginaPrincipal {
+    width: 144px;
+    height: 48px;
+    border-radius: 30px;
+    background-color: #0f0f0f;
+    position: relative;
+    overflow: hidden;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 35px;
+    font-weight: normal;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-left: 64px;
+}
+
+.botonPaginaPrincipal::before {
+    border-radius: 20px;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: whitesmoke;
+    z-index: -1;
+    left: -100%;
+    width: 100%;
+    transition: left 0.3s ease, width 0.3s ease;
+}
+
+.botonPaginaPrincipal:hover::before {
+    left: 0;
+    width: 100%;
+}
+
+.botonPaginaPrincipal:visited {
+    color: whitesmoke;
+    opacity: 0.8;
+}
+
+.botonPaginaPrincipal:hover {
+    color: #0f0f0f;
+    font-weight: bold;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Estilo header GENERICOS */
+#divLogoNavGenerico{
+    display: flex;
+    flex-direction: column;
+    width: 500px;  
+    margin-bottom: 100px;
+}
+#divLogotipoGenerico {
+    width: 95vw; 
+    margin-bottom: 40px;
+}
+#enlaceLogoGenerico{
+    color: white;
+    text-decoration: none;
+}
+#enlaceLogoGenerico:visited{
+    color: white;
+    text-decoration: none;
+}
+#referenciaLogoGenerico{
+    margin-top: -10px;
+    padding-bottom: 10px;
+}
+#logotipoGenerico {
+    width: 300px;
+}
+
+#navegacionGenerico {
+    width: 95vw;
+    display: flex;
+    flex-direction: row;
+    gap: 45px; 
+}
+
+#navegacionGenerico a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-top: 10px;
+    font-size: 20px;
+}
+#tituloGenerico{
+    margin-top: 30px;
+    width: 700px;
+    color: white;
+    text-align: center; 
+}
+#tituloGenerico p{
+    width: 40vw;
+    margin-top: 30px;
+    font-size: 20px;
+    margin-bottom: 100px;
+    text-align: justify;
+}
+/* ---------------------------------------------------------------------- */
+/* Estilos para NOSOTROS */
+#headerNosotros{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #0D0D0D;
+    background-image: url(../image/imagenesNOSOTROS/1-portada\ header\ nosotros.png );
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#mainNosotros{
+    /* padding-top: 30px; */
+    padding-bottom: 30px;
+    background-color: white;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#divTextoNosotros{
+    width: 500px;
+    height:340px;
+    padding: 30px;
+    font-size: 20px;
+}
+#divTextoNosotros2{
+    width: 500px;
+    height:600px;
+    padding: 30px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+#divTextoNosotros2 p strong{
+    text-decoration: underline;
+    font-style: italic;
+}
+#divImagenesNosotros{
+    width: 100vw;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+   justify-content: space-around;
+    
+}
+#divImagenesNosotros img{
+    width: 500px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.589);
+
+}
+
+#seccionFondoNosotros{
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #0D0D0D;
+    background-image: url(../image/imagenesNOSOTROS/fondo\ con\ imagen/1-fondo.png);
+    background-repeat: no-repeat;
+    background-size: 2000px;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Estilos para PRODUCTOS */
+#headerProductos{
+    height: 100vh;
+    width: 100vw; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #0D0D0D;
+    background-image: url(../image/imagenesProductos/1-portada\ header\ productos.png );
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#ultimaSeccionProductos{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 100vw;
+    padding-top: 200px;
+    padding-bottom: 80px;
+}
+#seccionProductos{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 100vw;
+    padding-top: 230px;
+    padding-bottom: 10px;
+}
+#productos{
+    width: 300px;
+    height: 400px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.151);
+}
+#productos img{
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.589);
+    margin-top: -100px;
+    margin-bottom: 20px;
+}
+
+#productos p{
+    padding:20px;
+    margin-bottom: 50px;
+}
+#productos b{
+    text-decoration: underline;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Estilos para blog */
+#headerBlog{
+    height: 100vh;
+    width: 100vw; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #0D0D0D;
+    background-image: url(../image/imagenesblog/1-\ portada\ header\ blog.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+}
+#mainBlog{
+    width: 100vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: white;
+}
+#seccionesBlog{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80vw;
+    height: 300px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.151);
+}
+
+#seccionesBlog p{
+    width: 700px;
+    font-size: 18px;
+}
+#seccionesBlog img{
+    width: 300px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.589);
+}
+
+/* ---------------------------------------------------------------------- */
+/* Estilos para Contacto */
+#headerContacto{
+    height: 100vh;
+    width: 100vw; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #0D0D0D;
+    background-image: url(../image/imagenesContacto/2-\ portada\ header\ contacto.png );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+}
+#mainContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: white; 
+
+}
+
+#seccionContacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1200px; 
+    gap: 40px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.divSobreMi, .divFormulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: auto;
+}
+
+.tituloSobreMi, .tituloFormulario {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 700; 
+}
+#divTextoSobremi{
+    display: flex;
+    flex-direction: row;
+}
+#contacto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icono {
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+    color: #777; 
+}
+
+input, .areaTexto {
+    width: 400px;
+    padding: 14px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+    font-size: 16px;
+    color: #333;
+}
+
+.nombreApellido, .email, .asunto {
+    background-color: #fff;
+}
+
+.areaTexto {
+    height: 150px;
+}
+
+#botonFormulario {
+    padding: 14px 28px;
+    border-radius: 50px;
+    background-color: #0f0f0f;
+        color: white;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+/* #botonFormulario:hover {
+    background-color: #000000;
+    transform: translateY(-2px); 
+} */
+
+#seccionMapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+}
+
+#mapa {
+    width: 90%;
+    height: 320px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del footer */
+.footerInicio {
+    background-color: #f8f8f8;
+    color: #1D1D1B;
+    width: 100vw;
+    font-size: 12px;
+    text-align: center;
+    height: 50px;
+    margin-top: auto; 
+}
+
+/* Estilos generales para el footer */
+.footer {
+    width: 100vw;
+    background-color: #f8f8f8;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    color: #1D1D1B;
+}
+
+.footer-contenedor {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.logo-footer img {
+    max-width: 250px;
+    height: auto;
+}
+
+#navegacionFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer-titulo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #1D1D1B;
+}
+
+#navegacionFooter ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+#navegacionFooter li {
+    margin-bottom: 10px;
+}
+
+#navegacionFooter a {
+    text-decoration: none;
+    color: #1D1D1B;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+#navegacionFooter a:hover {
+    color: #f56105;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.contacto-titulo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #1D1D1B;
+}
+
+.derechos{
+    width: 100vw;
+    text-align: center;
+    font-size: 12px;
+}
