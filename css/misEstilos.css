@@ -584,3 +584,106 @@ input, .areaTexto {
     text-align: center;
     font-size: 12px;
 }
+/* Tablets */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  section {
+    padding: 40px;
+  }
+
+  .formulario {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .input-field {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .button {
+    padding: 12px 24px;
+  }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .formulario {
+    width: 100%;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .input-field {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .button {
+    padding: 12px 24px;
+  }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1200px) {
+  .container {
+    padding: 40px;
+  }
+
+  section {
+    padding: 80px;
+  }
+
+  .header {
+    justify-content: space-between;
+  }
+
+  .nav {
+    gap: 30px;
+  }
+}
