@@ -584,3 +584,408 @@ input, .areaTexto {
     text-align: center;
     font-size: 12px;
 }
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 1024px) {
+    /* Reset box-sizing para asegurar que el padding y los márgenes no causen overflow */
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Sección Portada */
+    #headerPortada {
+        background-size: cover;
+        width: 100%;
+        height: 100vh; /* Ajustamos la altura para que ocupe todo el alto necesario */
+    }
+
+    #divLogoNav {
+        max-width: 100%;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    #logotipo {
+        max-width: 250px;
+        width: 100%;
+    }
+
+    #navegacion {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        align-items: center;
+    }
+
+    #navegacion a {
+        font-size: 16px;
+    }
+
+    #parrafoInicio {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .botonPaginaPrincipal {
+        width: 130px;
+    }
+
+    /* Sección Nosotros */
+    #divTextoNosotros {
+        width: 90%;
+    }
+
+    #divImagenesNosotros {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #divImagenesNosotros img {
+        width: 100%;
+        max-width: 400px;
+    }
+    #divTextoNosotros2{
+        width: 80%;
+    }
+
+    /* Footer */
+    .footer-contenedor {
+        display: flex;
+        flex-direction: column; /* Apilar todos los elementos en columna */
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    #navegacionFooter {
+        display: flex; 
+        flex-direction: column; /* Asegurar que los links estén en columna */
+        gap: 15px; 
+        width: 100%; 
+        align-items: center; /* Centrado de los enlaces */
+        padding: 20px 0; /* Añadir algo de padding para que no esté tan pegado al borde */
+    }
+
+    #navegacionFooter a {
+        font-size: 16px;
+        text-decoration: none; /* Evitar subrayado */
+        color: #333; /* Color del texto */
+    }
+
+    /* Estilos del Header Generico */
+    #divLogoNavGenerico {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    #divLogotipoGenerico {
+        width: 95vw;
+        margin-bottom: 40px;
+    }
+
+    #navegacionGenerico {
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+        justify-content: center;
+    }
+
+    #navegacionGenerico a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        padding-top: 10px;
+        font-size: 18px;
+    }
+
+    #tituloGenerico {
+        margin-top: 30px;
+        width: 90%;
+        color: white;
+        text-align: center;
+    }
+
+    #tituloGenerico p {
+        width: 80%;
+        margin-top: 30px;
+        font-size: 18px;
+        margin-bottom: 80px;
+        text-align: justify;
+    }
+
+    /* Sección de Productos, Blog y Contacto */
+    #headerProductos, #headerBlog, #headerContacto {
+        height: auto;
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #0D0D0D;
+        width: 100%;
+    }
+
+    #mainBlog, #mainContacto {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: white;
+    }
+
+    #seccionesBlog{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.151);
+    }
+    #seccionesBlog p{
+        width: 80%;
+        padding: 10px;
+    }
+    #seccionContacto {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.151);
+    }
+
+    #seccionProductos{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    #ultimaSeccionProductos{
+        display: flex;
+        flex-direction: column;
+    }
+    #productos{
+        margin-top: 150px;
+    }
+    /* Formulario de Contacto */
+    #divFormulario input{
+        width: 30%;
+        padding: 14px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        background-color: #fafafa;
+        font-size: 16px;
+        color: #333;
+    }
+
+    #botonFormulario {
+        width: 30%;
+        padding: 14px 28px;
+        border-radius: 50px;
+        background-color: #0f0f0f;
+        color: white;
+        font-weight: 600;
+        font-size: 16px;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+    }
+
+    #botonFormulario:hover {
+        background-color: #f56105;
+        transition: 0.3s;
+    }
+}
+
+/* Media Queries para pantallas más pequeñas (móviles) */
+@media (max-width: 768px) {
+    /* Reset box-sizing */
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Sección Portada */
+    #headerPortada {
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+    }
+
+    #divLogoNav {
+        max-width: 100%;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    #logotipo {
+        max-width: 250px;
+        width: 100%;
+    }
+
+    #navegacion {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        width: 100%;
+    }
+
+    #navegacion a {
+        font-size: 16px;
+    }
+
+    #parrafoInicio {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .botonPaginaPrincipal {
+        width: 130px;
+    }
+
+    /* Sección Nosotros */
+    #divTextoNosotros {
+        width: 90%;
+    }
+
+    #divImagenesNosotros {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #divImagenesNosotros img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    /* Footer */
+    .footer-contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    #navegacionFooter {
+        display: flex; 
+        flex-direction: column;
+        gap: 15px; 
+        width: 100%; 
+        align-items: center; 
+        padding: 20px 0; 
+    }
+
+    #navegacionFooter a {
+        font-size: 14px;
+        text-decoration: none; 
+        color: #333; 
+    }
+
+    /* Estilos del Header Generico */
+    #divLogoNavGenerico {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    #divLogotipoGenerico {
+        width: 95vw;
+        margin-bottom: 40px;
+    }
+
+    #navegacionGenerico {
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #navegacionGenerico a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        padding-top: 10px;
+        font-size: 16px;
+    }
+
+    #tituloGenerico {
+        margin-top: 30px;
+        width: 90%;
+        color: white;
+        text-align: center;
+    }
+
+    #tituloGenerico p {
+        width: 80%;
+        margin-top: 30px;
+        font-size: 16px;
+        margin-bottom: 60px;
+        text-align: justify;
+    }
+
+    /* Sección de Productos, Blog y Contacto */
+    #headerProductos, #headerBlog, #headerContacto {
+        height: auto;
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #0D0D0D;
+        width: 100%;
+    }
+
+    #mainBlog, #mainContacto {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: white;
+    }
+
+    #seccionesBlog, #seccionContacto {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.151);
+    }
+
+    /* Formulario de Contacto */
+    #contacto input, .areaTexto {
+        width: 80%;
+        padding: 14px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        background-color: #fafafa;
+        font-size: 16px;
+        color: #333;
+    }
+
+    #botonFormulario {
+        padding: 14px 28px;
+        border-radius: 50px;
+        background-color: #0f0f0f;
+        color: white;
+        font-weight: 600;
+        font-size: 16px;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+    }
+
+    #botonFormulario:hover {
+        background-color: #f56105;
+        transition: 0.3s;
+    }
+}
+
